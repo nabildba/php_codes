@@ -1,4 +1,4 @@
-# PHP Crash Codes
+# PHP Codes
 
  - Comments
  - Variables
