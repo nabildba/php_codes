@@ -1,65 +1,65 @@
 <?php
 
 $age = 20;
-$salary = 300000;
+$salaire = 300000;
 
-// Sample if
+// Simple if
 if ($age == 20) {
     echo "1";
 }
 
-// Without circle braces
+// Sans les accolades (une seule instruction)
 if ($age === 20)
     echo "1";
 
-// Sample if-else
+// Simple if-else
 if ($age > 20) {
     echo "1";
 } else {
     echo "2";
 }
 
-// Difference between == and ===
+// Difference entre == et ===
 $age == 20; // true
 $age == '20'; // true
 
 $age === 20; // true
 $age === '20'; // false
 
-// if AND
-if ($age > 20 && $salary === 300000) {
+// if AND && (et logique)
+if ($age > 20 && $salaire === 300000) {
 
 }
-// if OR
-if ($age > 20 OR $salary === 300000) {
+// if OR || (ou logique)
+if ($age > 20 OR $salaire === 300000) {
 
 }
 
-// Ternary if
+// if tertiaire
 echo $age < 22 ? 'Young' : 'Old';
 echo '<br>';
 
 // Short ternary
-$myAge = $age ?: 18; // Equivalent of "$age ? $age : 18"
+$myAge = $age ?: 18; // Equivalent de "$age ? $age : 18"
 
-// Null coalescing operator
+// Null coalescent
 $var = isset($name) ? $name : 'John';
-$var = $name ?? 'John'; // Equivalent of above
+$var = $name ?? 'John'; // Equivalent au précédent
 echo $var.'<br>';
 
-// switch
+// selection des cas (switch)
 $userRole = 'admin'; // admin, editor, user
 
 switch ($userRole) {
     case 'admin':
-        echo 'You can do anything<br>';
+        echo 'tu peux faire tout ce que tu veux<br>';
         break;
     case 'editor';
-        echo 'You can edit content<br>';
+        echo 'tu peux editer le contenue <br>';
         break;
     case 'user':
-        echo 'You can view posts and comment<br>';
+        echo 'tu peux voir les postes et commenter<br>';
         break;
     default:
-        echo 'Unknown role<br>';
+        echo 'Role inconnue<br>';
 }

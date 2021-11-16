@@ -1,10 +1,10 @@
 <?php
-// Single line comment
+// commentaire sur une seule ligne
 
-# Another single line comment
+# un autre single line comment
 
 /*
-Multiline comment
-with some
-long text
+commentaire sur plusieurs lignes
+avec texte
+plus long
 */

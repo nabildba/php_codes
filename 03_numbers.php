@@ -1,18 +1,18 @@
 <?php
 
-// Declaring numbers
+// Declares des nombres
 $a = 5;
 $b = 4;
 $c = 1.2;
 
-// Arithmetic operations
-echo ($a + $b) * $c . '<br>';
+// Operations arithmetique
 echo $a - $b . '<br>';
 echo $a * $b . '<br>'; 
 echo $a / $b . '<br>';
 echo $a % $b . '<br>';
+echo ($a + $b) * $c . '<br>';//priorité des opérateurs
 
-// Assignment with math operators
+// Affectations
 
 //$a += $b; echo $a.'<br>'; // $a = 9
 //$a -= $b; echo $a.'<br>'; // $a = 1
@@ -20,27 +20,27 @@ echo $a % $b . '<br>';
 //$a /= $b; echo $a.'<br>'; // $a = 1.25
 //$a %= $b; echo $a.'<br>'; // $a = 1
 
-// Increment operator
-echo $a++ . '<br>';
-echo ++$a . '<br>';
+// Incrementation
+echo $a++ . '<br>';//post
+echo ++$a . '<br>';//pre
 
-// Decrement operator
+// Decrementation
 echo $a-- . '<br>';
 echo --$a . '<br>';
 
-// Number checking functions
+// functions de verif
 is_float(1.25); // true
 is_integer(3.4); // false
 is_numeric("3.45"); // true
 is_numeric("3g.45"); // false
 
-// Conversion
+// Conversion (cast)
 $strNumber = '12.34';
-$number = (float)$strNumber; // Use floatval(), (int), intval()
+$number = (float)$strNumber; // floatval(), (int), intval()
 var_dump($number);
 echo '<br>';
 
-// Number functions
+// fonctions numériques
 echo "abs(-15) " . abs(-15) . '<br>';
 echo "pow(2,  3) " . pow(2, 3) . '<br>';
 echo "sqrt(16) " . sqrt(16) . '<br>';

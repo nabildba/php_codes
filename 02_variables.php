@@ -1,8 +1,8 @@
 <?php
 
-// What is a variable
+// Les variables
 
-// Variable types
+// types de variable
 /*
     String
     Integer
@@ -14,53 +14,55 @@
     Resource
 */
 
-// Declare variables
+// Declarer des variables
 $name = "Zura";
 $age = 28;
-$isMale = true; // Change into false
+$isMale = true; // prend aussi la valeur false
 $height = 1.85;
 $salary = null;
 
-// Print the variables. Explain what is concatenation
+// afficher les variables. concatenation (.)
 echo $name . '<br>';
 echo $age . '<br>';
 echo $isMale . '<br>';
 echo $height . '<br>';
 echo $salary . '<br>';
 
-// Print types of the variables
+// afficher les types des variables
 echo gettype($name) . '<br>';
 echo gettype($age) . '<br>';
 echo gettype($isMale) . '<br>';
 echo gettype($height) . '<br>';
 echo gettype($salary) . '<br>';
 
-// Print the whole variable
+// afficher les infos des variables
 var_dump($name, $age, $isMale, $height, $salary);
 
-// Change the value of the variable
+// modifier la valeur de la variable
 $name = false;
 
-// Print type of the variable
+// afficher le nouveau type de la variable
 echo gettype($name) . '<br>';
 
-// Variable checking functions
+// fonctions pour vérifier les types des variables
 is_string($name); // false
 is_int($age); // true
 is_bool($isMale); // true
 is_double($height); // true
 
-// Check if variable is defined
+// Vérifier si la variable est définie
 var_dump(isset($name));
 var_dump(isset($name2));
 echo '<br>';
 
-// Constants
+// definir et utiliser des Constantes en PHP
 define('PI', 3.14);
 echo PI.'<br>';
 var_dump(defined('PI')); // defined(PI2)
 echo '<br>';
 
-// 12. Using PHP built-in constants
-echo SORT_ASC.'<br>';
+// PHP built-in constants
+echo PHP_VERSION.'<br>';
 echo PHP_INT_MAX.'<br>';
+// PHP_EOL  ,  PHP_OS 
+

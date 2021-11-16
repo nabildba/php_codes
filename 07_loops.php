@@ -1,12 +1,14 @@
 <?php
+//Les boucles 
 
-// while
-while (true) { // Infinite loop: DON'T run this
-    // Do something constantly
+
+// boucle sans compteur - while
+while (true) { // boucle infinie: A NE PAS EXECUTER
+    // faire quelque chose continuellement
 }
 
-// Loop with $counter
-$counter = 0; // When counter is 10??
+// boucle avec compteur $counter
+$counter = 0; 
 while ($counter < 10) {
     echo $counter.'<br>';
     // if ($counter > 5) break;
@@ -14,7 +16,7 @@ while ($counter < 10) {
 }
 
 // do - while
-$counter = 0; // When counter is 10?
+$counter = 0; 
 do {
     // Do some code right here
     $counter++;
@@ -22,21 +24,22 @@ do {
 
 // for
 for ($i = 0; $i < 10; $i++) {
-    echo $i."<br>";
+    echo $i."<br>"; 
 }
+//if continue
 
 // foreach
-$fruits = ["Banana", "Apple", "Orange"];
+$fruits = ["Banane", "Pomme", "Orange"];
 foreach ($fruits as $i => $fruit) {
     echo $i . ' ' . $fruit . '<br>';
 }
 
-// Iterate Over associative array.
+// Boucle et tableaux associatifs.
 $person = [
-    'name' => 'Brad',
-    'surname' => 'Traversy',
+    'nom' => 'Chihed',
+    'prenom' => 'Aicha',
     'age' => 30,
-    'hobbies' => ['Tennis', 'Video Games'],
+    'hobbies' => ['Tennis', 'Jeux video'],
 ];
 foreach ($person as $key => $value) {
     if ($key === 'hobbies') {

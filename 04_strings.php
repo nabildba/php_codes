@@ -1,16 +1,16 @@
 <?php
 
-// Create simple string
-$string = "Hello, I am Zura"; // Extract TheCodeholic into variable
-$string2 = 'Hello, I am Zura'; // Replace TheCodeholic with variable
+// Créer des strings
+$string = "Salut, je suis Aicha"; 
+$string2 = 'Salut, je suis Aicha'; 
 echo $string . '<br>';
 echo $string2 . '<br>';
 
-// String concatenation
-echo "Hello " . " World"; // Multiple concatenation . " and PHP";
+// Concaténation
+echo "Salut " . " le monde"; // Concaténation multiple . " et PHP";
 
-// String functions
-$string = "    Hello World      ";
+// fonctions de chaines de caractéres
+$string = "    Salut le monde      ";
 
 echo "1 - " . strlen($string) . '<br>' . PHP_EOL;
 echo "2 - " . trim($string) . '<br>' . PHP_EOL;
@@ -20,36 +20,37 @@ echo "5 - " . str_word_count($string) . '<br>' . PHP_EOL;
 echo "6 - " . strrev($string) . '<br>' . PHP_EOL;
 echo "7 - " . strtoupper($string) . '<br>' . PHP_EOL;
 echo "8 - " . strtolower($string) . '<br>' . PHP_EOL;
-echo "9 - " . ucfirst('hello') . '<br>' . PHP_EOL;
-echo "10 - " . lcfirst('HELLO') . '<br>' . PHP_EOL;
-echo "11 - " . ucwords('hello world') . '<br>' . PHP_EOL;
-echo "12 - " . strpos($string, 'world') . '<br>' . PHP_EOL; // Change into world
-echo "13 - " . stripos($string, 'world') . '<br>' . PHP_EOL;
+echo "9 - " . ucfirst('Salut') . '<br>' . PHP_EOL;
+echo "10 - " . lcfirst('Salut') . '<br>' . PHP_EOL;
+echo "11 - " . ucwords('Salut le monde') . '<br>' . PHP_EOL;
+echo "12 - " . strpos($string, 'le monde') . '<br>' . PHP_EOL; // Change into le monde
+echo "13 - " . stripos($string, 'le monde') . '<br>' . PHP_EOL;
 echo "14 - " . substr($string, 8) . '<br>' . PHP_EOL;
-echo "15 - " . str_replace('World', 'PHP', $string) . '<br>' . PHP_EOL;
-echo "16 - " . str_ireplace('world', 'PHP', $string) . '<br>' . PHP_EOL;
+echo "15 - " . str_replace('le monde', 'PHP', $string) . '<br>' . PHP_EOL;
+echo "16 - " . str_ireplace('le monde', 'PHP', $string) . '<br>' . PHP_EOL;
 
-$invoiceNumber = 100;
-$invoiceNumber2 = 123456;
-echo str_pad($invoiceNumber, 8, '0', STR_PAD_LEFT) . '<br>' . PHP_EOL;
-echo str_pad($invoiceNumber2, 8, '0', STR_PAD_LEFT) . '<br>' . PHP_EOL;
-echo str_repeat('Hello', 2) . '<br>' . PHP_EOL;
+$num = 100;
+$num2 = 123456;
+echo str_pad($num, 8, '0', STR_PAD_LEFT) . '<br>' . PHP_EOL;
+echo str_pad($num2, 8, '0', STR_PAD_LEFT) . '<br>' . PHP_EOL;
+echo str_repeat('Salut', 2) . '<br>' . PHP_EOL;
 
 
-// Multiline text and line breaks
+// texte multilignes et saut de lignes
 $longText = "
-  Hello, my name is Zura
-  I am 27,
-  I love my daughter
+  Salam, mon nom est Aicha
+  age 23,
+  et je code en PHP
 ";
 echo $longText . '<br>' . PHP_EOL;
-echo nl2br($longText) . '<br>' . PHP_EOL;
+// new line --> <br>
+echo nl2br($longText) . '<br>' . PHP_EOL; 
 
-// Multiline text and reserve html tags
+// texte sur plusieurs lignes avec balises html
 $longText = "
-  Hello, my name is <b>Zura</b>
-  I am <b>27</b>,
-  I love my daughter
+  Salam, mon nom est <b>Aicha</b>
+  age <b>23</b>,
+  et je code en PHP
 ";
 echo "1 - " . $longText . '<br>';
 echo "2 - " . nl2br($longText) . '<br>';
