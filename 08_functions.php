@@ -1,44 +1,44 @@
 <?php
 
-// Function which prints "Hello I am Zura"
+// Fonction qui affiche "Hello je suis Aicha"
 function hello()
 {
-    echo 'Hello I am Zura<br>';
+    echo 'Hello je suis Aicha<br>';
 }
 
 hello();
 hello();
 hello();
 
-// Function with argument
-//function hello($name)
+// Fonction avec paramétre (argument)
+//function hello($nom)
 //{
-//    echo "Hello I am $name";
+//    echo "Hello je suis $name";
 //}
 
-// Create sum of two functions
-function sum($a, $b)
+// fonction qui calcule la somme de deux valeurs
+function somme($a, $b)
 {
     return $a + $b;
 }
 
-echo sum(4,5);
-echo sum(9,10);
+echo somme(4,5);
+echo somme(9,10);
 
-// Create function to sum all numbers using ...$nums
-//function sum(...$nums)
+// la somme de plusieurs valeurs avec ...$args
+//function somme(...$nums)
 //{
-//    $sum = 0;
-//    foreach ($nums as $num) $sum += $num;
-//    return $sum;
+//    $somme = 0;
+//    foreach ($nums as $n) $somme += $n;
+//    return $somme;
 //}
-//echo sum(1, 2, 3, 4, 6);
+//echo somme(1, 2, 3, 4, 6);
 //
 // Arrow functions
-//function sum(...$nums)
+//function somme(...$nums)
 //{
 //    return array_reduce($nums, fn($carry, $n) => carry + $n);
 //}
-//echo sum(1, 2, 3, 4, 6);
+//echo somme(1, 2, 3, 4, 6);
 
 
