@@ -63,7 +63,7 @@ echo '</pre>';
 $legumes = ['Carotte', 'Concombre'];
 echo '<pre>';
 var_dump(array_merge($fruits, $legumes));
-var_dump([...$fruits, ...$legumes]); // PHP 7.4
+//var_dump([...$fruits, ...$legumes]); // PHP 7.4
 echo '</pre>';
 
 // trier les éléments du tableau (Reverse order also)
@@ -96,7 +96,7 @@ $personne['ville'] = 'Rabat';
 if (!isset($personne['addresse'])){
     $personne['address'] = 'Inconnue';
 }
-$personne['address'] ??= 'inconnue';
+//$personne['address'] ??= 'inconnue';//php7.4
 echo $personne['addresse'].'<br>';
 
 // Vérifier si le tableau contient une clé
