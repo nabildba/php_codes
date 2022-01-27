@@ -8,7 +8,7 @@ $c = 1.2;
 // Operations arithmetique
 echo $a - $b . '<br>';
 echo $a * $b . '<br>'; 
-echo $a / $b . '<br>';
+echo $a / $b . '<br>'; //intdiv($a,$b) php7+ ou floor($a/$b)
 echo $a % $b . '<br>';
 echo ($a + $b) * $c . '<br>';//priorité des opérateurs
 
