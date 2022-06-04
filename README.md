@@ -18,3 +18,4 @@
     - File uploading and file validation
     - Working with mysql
  - Composer and autoloading
+ - Laravel tips : https://github.com/LaravelDaily/laravel-tips
